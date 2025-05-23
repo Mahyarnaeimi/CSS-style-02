@@ -1,0 +1,38 @@
+body {
+      margin: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+.trail-container {
+      position: relative;
+      font-family: 'Georgia', serif;
+      font-size: 160px;
+      font-weight: bold;
+    }
+
+.trail-container .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+.trail-container .main {
+      color: #111;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Trail layers from dark to light (black to whiteish) */
+    .layer-1 { transform: translate(2px, 2px); color: rgba(0,0,0,0.3); }
+    .layer-2 { transform: translate(4px, 4px); color: rgba(40,40,40,0.25); }
+    .layer-3 { transform: translate(6px, 6px); color: rgba(80,80,80,0.2); }
+    .layer-4 { transform: translate(8px, 8px); color: rgba(120,120,120,0.15); }
+    .layer-5 { transform: translate(10px, 10px); color: rgba(160,160,160,0.1); }
+    .layer-6 { transform: translate(12px, 12px); color: rgba(200,200,200,0.08); }
+    .layer-7 { transform: translate(14px, 14px); color: rgba(230,230,230,0.05); }
+    .layer-8 { transform: translate(16px, 16px); color: rgba(255,255,255,0.03); }
